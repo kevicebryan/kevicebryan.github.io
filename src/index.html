@@ -13,6 +13,7 @@
   <title>Kevin Bryan</title>
 </head>
 <body class="bg-body text-white pb-12 font-roboto">
+
   <!-- Header -->
   <header class="py-6 go-down">
     <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
@@ -30,13 +31,15 @@
       </div>
     </div>
   </header>
-
-  <div id="sidebar" class="sidebar hidden absolute right-8 text-right text-lg space-y-5 go-left-mobile ease-in-out duration-100">
+<!-- Mobile SideBar -->
+<div class="md:hidden text-selected-text absolute right-8">
+  <div id="sidebar" class="sidebar hidden absolute right-8 text-right text-lg font-semibold space-y-5 go-left-mobile ease-in-out duration-100">
     <a href="#" class= "block hover:opacity-70">Home</a>
-    <a href="#work" class="block hover:opacity-70">My Work</a>
+    <a href="#work" class="block hover:opacity-70 text-white">My Work</a>
     <a href="#language" class="block hover:opacity-70">Language</a>
-    <a href="#contact" class="block hover:opacity-70">Contact Me!</a>
+    <a href="#contact" class="block hover:opacity-70 text-white">Contact</a>
   </div>
+</div>
 
 <!-- Hero (About Me) -->
   <div class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
@@ -99,7 +102,7 @@
   </div>
 
   <!-- Porfolio -->
-  <div class="container mt-32 flex justify-between items-center max-auto px-8 md:px-14 lg:px-36 w-full">
+  <div class="container mt-8 flex justify-between items-center max-auto px-8 md:px-14 lg:px-36 w-full">
     <section class="w-full">
       <h2 id="work" class="secondary-title">My Work</h2>
       <p class="section-paragraph">Some projects I have worked on in the past</p>
