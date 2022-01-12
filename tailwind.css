@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+html, body{
+  scroll-behavior: smooth;
+}
+
+.go-down{
+  animation: transitionIn 0.4s;
+}
+
+.go-down-slow{
+  animation: transitionInBigger 0.8s;
+}
+
+.go-left{
+  animation: transitionLeft 1s;
+  transition: ease-in-out 1.0s;
+}
+
+.go-left-mobile{
+  animation: transitionLeft 0.3s;
+  transition: ease-in-out 1.0s;
+}
+
+.go-right{
+  animation: transitionRight 0.4s;
+}
+
+
+
+@keyframes transitionIn {
+  from{
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes transitionInBigger{
+  from{
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes transitionLeft {
+  from{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes transitionRight {
+  from{
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.left-50{
+  left: 50%;
+}
+
+.curve-edge{
+  border-radius: 16px;
+}
+
+.right-50{
+  right:50%;
+}
+
+.top-50{
+  top: 50%;
+}
+
+.-z-1 {
+  z-index: -1;
+}
+
+.secondary-title {
+  @apply text-3xl font-bold;
+}
+
+.secondary-title::before {
+  content: "";
+  @apply block w-12 h-2 bg-theme rounded-full mb-1;
+}
+
+.section-paragraph {
+  @apply text-secondary my-6 w-full max-w-3xl;
+}
+
+[id] {
+scroll-margin-top: 100px;
+}
+
+.left-percentage {
+  left: 5%;
+}
+
+.h-screen-partial {
+  height: 80vh;
+}
+
+.nav-dot {
+  transition: background 200ms, border-color 200ms;
+}
+
+.selected-circle {
+  @apply border-theme bg-theme;
+}
+
+.nav-dot:hover span {
+  opacity: 1;
+}

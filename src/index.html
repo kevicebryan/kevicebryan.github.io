@@ -1,0 +1,263 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/MyIconNOBITA.png" type = "image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <title>Kevin Bryan</title>
+</head>
+<body class="bg-body text-white pb-12 font-roboto">
+  <!-- Header -->
+  <header class="py-6 go-down">
+    <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+      <div class="text-lg font-bold">KevinBryan</div>
+      <div class="hidden md:flex space-x-12 items-center go-down">
+        <a href="#" class= "text-selected-text">Home</a>
+        <a href="#work">My Work</a>
+        <a href="#language">Language</a>
+        <a href="#contact" class="px-6 py-2 bg-theme font-bold">Contact Me!</a>
+      </div>
+      <div class="mobile-menu-button md:hidden hover:opacity-70 hover:scale-125 hover:ease-in-out duration-100">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 white" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <div id="sidebar" class="sidebar hidden absolute right-8 text-right text-lg space-y-5 go-left-mobile ease-in-out duration-100">
+    <a href="#" class= "block hover:opacity-70">Home</a>
+    <a href="#work" class="block hover:opacity-70">My Work</a>
+    <a href="#language" class="block hover:opacity-70">Language</a>
+    <a href="#contact" class="block hover:opacity-70">Contact Me!</a>
+  </div>
+
+<!-- Hero (About Me) -->
+  <div class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+    <div class="flex flex-wrap md:flex-nowrap">
+      <!-- Side Nav -->
+      <nav class="hidden lg:mr-24 lg: w-4 fixed left-percentage lg:block go-right">
+        <div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-36">
+          <a href="#" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+            <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Home</span>
+          </a>
+          <a href="#work" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+            <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">MyWork</span>
+          </a>
+          <a href="#language" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+            <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Language</span>
+          </a>
+          <a href="#contact" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+            <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">ContactMe</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt:0 md:my-36">
+        <h1 class="font-bold text-5xl md:text-6xl lgLtext-7xl text-center md:text-left animate-bounce">Welcome<br>to KB's Portofolio</h1>
+        <h2 class="mt-4 section-paragraph text-center md:text-left">From Indonesia ⛳, <br> Love <span class="text-selected-text">coding</span> and learning new things!</h2>
+        <div class="w-full flex justify-center md:justify-start">
+          <table class="shadow-2xl border-2 border-white  w-3/4 opacity-80 text-xs md:text-lg go-left">
+            <thead>
+              <tr>
+                <th class="py-3 bg-slate-500">School 🏫</th>
+                <th class="py-3 bg-slate-500">Year</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="py-3 bg-body px-2">BINUS University <br> <span class="text-sm italic opacity-70">School of Computer Science </span> </td>
+                <td class="py-3 bg-body px-2">2020-2024</td>
+              </tr>
+              <tr>
+                <td class="py-3 bg-body px-2">SMA Pelita Bangsa</td>
+                <td class="py-3 bg-body px-2">2017-2019</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- <div class="w-full flex justify-center md:justify-start">
+          <button class="px-8 py-4 bg-theme text-white font-bold mt-8 flex items-center space-x-3">
+              <div>
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.4375 11C14.4375 11.9117 14.0753 12.786 13.4307 13.4307C12.786 14.0753 11.9117 14.4375 11 14.4375C10.0883 14.4375 9.21398 14.0753 8.56932 13.4307C7.92466 12.786 7.5625 11.9117 7.5625 11C7.5625 10.0883 7.92466 9.21398 8.56932 8.56932C9.21398 7.92466 10.0883 7.5625 11 7.5625C11.9117 7.5625 12.786 7.92466 13.4307 8.56932C14.0753 9.21398 14.4375 10.0883 14.4375 11Z" fill="white"/>
+                      <path d="M0 11C0 11 4.125 3.4375 11 3.4375C17.875 3.4375 22 11 22 11C22 11 17.875 18.5625 11 18.5625C4.125 18.5625 0 11 0 11ZM11 15.8125C12.2764 15.8125 13.5004 15.3055 14.403 14.403C15.3055 13.5004 15.8125 12.2764 15.8125 11C15.8125 9.72365 15.3055 8.49957 14.403 7.59705C13.5004 6.69453 12.2764 6.1875 11 6.1875C9.72365 6.1875 8.49957 6.69453 7.59705 7.59705C6.69453 8.49957 6.1875 9.72365 6.1875 11C6.1875 12.2764 6.69453 13.5004 7.59705 14.403C8.49957 15.3055 9.72365 15.8125 11 15.8125Z" fill="white"/>
+                  </svg>								
+              </div>
+              <span>View my work.</span>
+          </button>
+        </div> -->
+      </div>
+      <img src="./img/KevinBryan.png" alt="Kevin Bryan" class="md:absolute h-3/4 -z-1 right-0 lg:mr-36 mx-auto -mt-24 w-80 md:w-auto go-down-slow">
+    </div> 
+  </div>
+
+  <!-- Porfolio -->
+  <div class="container mt-32 flex justify-between items-center max-auto px-8 md:px-14 lg:px-36 w-full">
+    <section class="w-full">
+      <h2 id="work" class="secondary-title">My Work</h2>
+      <p class="section-paragraph">Some projects I have worked on in the past</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+        <!-- Tanah -->
+        <a href="https://www.figma.com/proto/pUamH9CI8EPltd9vjVuLAo/ENTREAI-(Tanah)?node-id=73%3A1191&scaling=scale-down&page-id=9%3A3&starting-point-node-id=73%3A1191&show-proto-sidebar=1" class="w-full bg-cover h-36 lg:h-72 object-cover rounded-md hover:drop-shadow-xl hover:opacity-50 hover:md:opacity-100"
+        style="background-image: url(./img/TANAH.png);">
+          <div class="flex-col opacity-0 hover:md:opacity-80 h-full w-full bg-body hover:ease-linear duration-100 m-auto text-white
+          text-center pt-40 rounded-md">
+            <h3 class="font-bold text-2xl">TANAH</h3>
+            <p class="font-light text-sm ">House marketplace application, designed the <br> UI/UX for Entreprenuership Class.</p>
+          </div>
+        </a>
+     
+        <!-- LetFlix -->
+        <a href="https://drive.google.com/drive/folders/1ZT5Nvt5MwfVv3x7Z9-u2iytT68MGY14f?usp=sharing" class="w-full bg-cover h-36 lg:h-72 object-cover rounded-md hover:drop-shadow-xl hover:opacity-50 hover:md:opacity-100" 
+        style="background-image: url(./img/LEFLIX.png);">
+          <div class="flex-col opacity-0 hover:md:opacity-80 h-full w-full bg-body hover:ease-linear duration-100 m-auto text-white
+          text-center pt-40 rounded-md">
+            <h3 class="font-bold text-2xl">Letflix</h3>
+            <p class="font-light text-sm">A Netflix inspired website 🎬</p>
+          </div>
+        </a>
+        <!-- Articles -->
+        <a href="https://www.filemagz.com/author/kevin-bryan/" class="w-full bg-cover h-36 lg:h-72 object-cover rounded-md hover:drop-shadow-xl hover:opacity-50 hover:md:opacity-100"
+        style="background-image: url(./img/Filemagz\ Articles.png);">
+          <div class="flex-col opacity-0 hover:md:opacity-80 h-full w-full bg-body hover:ease-linear duration-100 m-auto text-white
+          text-center pt-40 rounded-md">
+            <h3 class="font-bold text-2xl">Filemagz Articles</h3>
+            <p class="font-light text-sm">Infromative articles written in Bahasa Indonesia for you <br>to read every morning!</p>
+          </div>
+        </a>
+        <!-- Microblog -->
+        <a href="https://www.instagram.com/filetechno/" class="w-full bg-cover h-36 lg:h-72 object-cover rounded-md hover:drop-shadow-xl hover:opacity-50 hover:md:opacity-100"
+        style="background-image: url(./img/FileTechno.png);">
+          <div class="flex-col opacity-0 hover:md:opacity-80 h-full w-full bg-body hover:ease-linear duration-100 m-auto text-white
+          text-center pt-40 rounded-md">
+            <h3 class="font-bold text-2xl">Filetechno</h3>
+            <p class="font-light text-sm">Informative Microblog about Tech,<br>mainly coding & design.</p>
+          </div>
+        </a>
+        <!-- GIT Blog -->
+        <a href="https://github.com/kevicebryan" class="w-full bg-cover h-36 lg:h-72 object-cover rounded-md hover:drop-shadow-xl hover:opacity-50 hover:md:opacity-100"
+        style="background-image: url(./img/GITHUB.png);">
+          <div class="flex-col opacity-0 hover:md:opacity-80 h-full w-full bg-body hover:ease-linear duration-100 m-auto text-white
+          text-center pt-40 rounded-md">
+            <h3 class="font-bold text-2xl">Github</h3>
+            <p class="font-light text-sm">Want to see more? <br> Come visit my Github!</p>
+          </div>
+        </a>
+        <!-- Brewing -->
+        <a href="#language" class="w-full bg-cover h-36 lg:h-72 object-cover rounded-md hover:drop-shadow-xl hover:opacity-50 hover:md:opacity-100"
+        style="background-image: url(./img/Brewing.png);">
+          <div class="flex-col opacity-0 hover:md:opacity-80 h-full w-full bg-body hover:ease-linear duration-100 m-auto text-white
+          text-center pt-40 rounded-md">
+            <h3 class="font-bold text-2xl">Still Brewing 🍲</h3>
+            <p class="font-light text-sm">More projects to come...</p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </div>
+  <!-- Coding Skills -->
+  <div class="container mt-32 flex justify-between items-center max-auto px-8 md:px-14 lg:px-36 w-full">
+    <section class="w-full">
+      <h2 id="language" class="secondary-title">Language</h2>
+      <p class="section-paragraph">Some frameworks and programming/coding languages I've learned</p>
+
+      <div class="space-y-12 my-16">
+        <!-- Skill -->
+        <div class="bg-none hover:bg-theme hover:bg-opacity-25  w-8/12 border border-nav p-4 lg:px-32 lg:py-8 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+          <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+            <h3 class="text-white text-2xl font-semibold">HTML, CSS & TailwindCSS, JavaScript</h3>
+            <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start mt-2 mb-2">
+              <div class="badge opacity-60">Frontend development</div>
+            </div>
+            <p class="text-secondary">Basic HTML, CSS, and JS, as well as implementation of TailwindCSS framework.</p>
+          </div>
+        </div>
+
+        <div class="bg-none hover:bg-theme hover:bg-opacity-25 w-8/12 border border-nav p-4 lg:px-32 lg:py-8 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+          <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+            <h3 class="text-white text-2xl font-semibold">C, C++, Java</h3>
+            <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start mt-2 mb-2">
+              <div class="badge opacity-60">Programming language</div>
+            </div>
+            <p class="text-secondary">Mastered the implementation and usage of C, C++, & Java Language</p>
+          </div>
+        </div>
+
+        <div class="bg-none hover:bg-theme hover:bg-opacity-25 w-8/12 border border-nav p-4 lg:px-32 lg:py-8 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+          <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+            <h3 class="text-white text-2xl font-semibold">SQL Server, MySQL</h3>
+            <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start mt-2 mb-2">
+              <div class="badge opacity-60">Database language</div>
+            </div>
+            <p class="text-secondary">Understood the basics and usage of DDL and DML in SQL</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+<!-- Contact -->
+  <div class="container mt-32 flex justify-between items-center max-auto px-8 md:px-14 lg:px-36 w-full">
+    <section class="w-full">
+      <h2 id="contact" class="secondary-title">Contact</h2>
+      <p class="section-paragraph">Feel free to leave a comment</p>
+      <div class="w-full gird lg:grid-cols-2 gap-8 lg:gap-32 mt-4">
+        <div class="space-y-12">
+          <!-- Contact me Form -->
+          <form>
+            <div>
+              <div>
+                <label class="text-white block text-xl font-bold my-6">Name</label>
+                <input class="w-full border border-input-border bg-input px-4 py-4" placeholder="Full Name" required type="text">
+              </div>
+              <div>
+                <label class="text-white block text-xl font-bold my-6">Email</label>
+                <input class="w-full border border-input-border bg-input px-4 py-4" placeholder="your@email.com" required type="email">
+              </div>
+              <div>
+                <label class="text-white block text-xl font-bold my-6">LinkedIn</label>
+                <input class="w-full border border-input-border bg-input px-4 py-4" placeholder="connect with me via LinkedIn" type="text">
+              </div>
+              <div>
+                <label class="text-white block text-xl font-bold my-6">Comment</label>
+                <input class="w-full border border-input-border bg-input px-4 py-4" placeholder="leave a comment here..." required type="text">
+              </div>
+              <input type="submit" class="px-6 py-2 bg-theme text-white font-bold cursor-pointer mt-6 hover:bg-white hover:text-theme hover:ease-in-out duration-100" value="Send it!"></input>
+            </div>
+          </form>
+
+          <!-- Contact Information -->
+          <div class="mt-12">
+						<p class="text-secondary text-center md:text-left hover:opacity-100 hover:ease-in duration-75">+62 85266991216</p>
+						<a href="mailto:kevin.bryan@binus.ac.id" class="text-secondary underline mt-3 block  text-center md:text-left hover:text-white hover:ease-in duration-75">kevin.bryan@binus.ac.id</a>
+
+						<!-- Sosmed -->
+						<div class="flex mt-4 space-x-6 justify-center md:justify-start">
+							<!-- Instagram -->
+							<a href="https://www.instagram.com/kkevinbbryan/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-instagram opacity-60 hover:opacity-100 hover:ease-in duration-75" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                </svg>
+							</a>
+							<!-- Twitter -->
+							<a href="https://www.linkedin.com/in/bryan-kevin/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-linkedin opacity-60 hover:opacity-100 hover:ease-in duration-75" viewBox="0 0 16 16">
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                </svg>
+							</a>
+						</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
