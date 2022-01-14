@@ -1,4 +1,4 @@
-﻿# KBPortofolioProject
+﻿# Kevin Bryan's Portofolio
 
 mini personal portofolio project,
 <br>
