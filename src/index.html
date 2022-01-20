@@ -15,9 +15,13 @@
 <body class="bg-body text-white pb-12 font-roboto">
 
   <!-- Header -->
-  <header class="py-6 go-down">
+  <header class="py-4 go-down">
     <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
-      <div class="text-lg font-bold">KevinBryan</div>
+      <div class=""><img src="./img/kevinbryan_chromatic.png" 
+        onmouseover="chgImg(this)" 
+        onmouseout="normalImg(this)"
+        alt="KevinBryan" class="h-40 w-auto ease-in-out duration-100"></div>
+      <!-- <div class="text-lg font-bold">KevinBryan</div> -->
       <div class="hidden md:flex space-x-12 items-center go-down">
         <a href="#" class= "text-selected-text">Home</a>
         <a href="#work">My Work</a>
@@ -32,8 +36,8 @@
     </div>
   </header>
 <!-- Mobile SideBar -->
-<div class="md:hidden text-selected-text absolute right-8">
-  <div id="sidebar" class="sidebar hidden absolute right-8 text-right text-lg font-semibold space-y-5 go-left-mobile ease-in-out duration-100">
+<div class="md:hidden text-selected-text absolute right-0">
+  <div id="sidebar" class="sidebar hidden absolute right-8 text-right text-lg font-semibold space-y-5 go-left-mobile ease-in-out duration-100 z-50">
     <a href="#" class= "block hover:opacity-70">Home</a>
     <a href="#work" class="block hover:opacity-70 text-white">My Work</a>
     <a href="#language" class="block hover:opacity-70">Language</a>
@@ -63,7 +67,7 @@
       </nav>
 
       <div class="flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt:0 md:my-36">
-        <h1 class="font-bold text-5xl md:text-6xl lgLtext-7xl text-center md:text-left animate-bounce">Welcome<br>to KB's Portofolio</h1>
+        <h1 id="welcome-title" class="font-bold text-5xl md:text-6xl lgLtext-7xl text-center md:text-left animate-bounce">Welcome<br>to KB's Portofolio</h1>
         <h2 class="mt-4 section-paragraph text-center md:text-left">From Indonesia ⛳, <br> Love <span class="text-selected-text">coding</span> and learning new things!</h2>
         <div class="w-full flex justify-center md:justify-start">
           <table class="shadow-2xl border-2 border-white  w-3/4 opacity-80 text-xs md:text-lg go-left">

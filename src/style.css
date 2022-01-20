@@ -469,6 +469,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 .right-0 {
   right: 0px;
 }
+.right-2 {
+  right: 0.5rem;
+}
+.top-10 {
+  top: 2.5rem;
+}
+.top-2 {
+  top: 0.5rem;
+}
+.z-50 {
+  z-index: 50;
+}
 .m-auto {
   margin: auto;
 }
@@ -502,11 +514,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .-mt-24 {
   margin-top: -6rem;
 }
-.mt-32 {
-  margin-top: 8rem;
-}
 .mt-6 {
   margin-top: 1.5rem;
+}
+.mt-32 {
+  margin-top: 8rem;
 }
 .mt-2 {
   margin-top: 0.5rem;
@@ -550,6 +562,24 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-full {
   height: 100%;
 }
+.h-auto {
+  height: auto;
+}
+.h-10 {
+  height: 2.5rem;
+}
+.h-12 {
+  height: 3rem;
+}
+.h-20 {
+  height: 5rem;
+}
+.h-32 {
+  height: 8rem;
+}
+.h-40 {
+  height: 10rem;
+}
 .w-full {
   width: 100%;
 }
@@ -570,6 +600,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-8\/12 {
   width: 66.666667%;
+}
+.w-auto {
+  width: auto;
 }
 .max-w-xl {
   max-width: 36rem;
@@ -807,11 +840,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .font-bold {
   font-weight: 700;
 }
-.font-light {
-  font-weight: 300;
-}
 .font-semibold {
   font-weight: 600;
+}
+.font-light {
+  font-weight: 300;
 }
 .italic {
   font-style: italic;
@@ -855,8 +888,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .duration-75 {
   transition-duration: 75ms;
 }
+.duration-300 {
+  transition-duration: 300ms;
+}
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ease-in {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700&display=swap');
 
@@ -1103,12 +1142,12 @@ scroll-margin-top: 100px;
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.hover\:ease-linear:hover {
-  transition-timing-function: linear;
-}
-
 .hover\:ease-in-out:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover\:ease-linear:hover {
+  transition-timing-function: linear;
 }
 
 .hover\:ease-in:hover {
