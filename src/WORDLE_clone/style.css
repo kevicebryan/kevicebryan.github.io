@@ -328,3 +328,7 @@ span.wrong {
   right: 4vw;
   cursor: pointer;
 }
+
+audio {
+  display: none;
+}
