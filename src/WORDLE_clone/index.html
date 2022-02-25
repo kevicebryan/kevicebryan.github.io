@@ -1,0 +1,155 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/MyIconNOBITA.png" />
+    <script src="script.js" defer></script>
+    <title>Guess The Word!</title>
+  </head>
+  <body>
+    <!-- BGM -->
+    <!-- <div class="bgm">
+      <audio controls autoplay>
+        <source src="assets/RoyaltyFreeMusic.mp3" type="audio/mpeg" />
+      </audio>
+    </div> -->
+
+    <!-- Header -->
+    <div class="header">
+      <div class="title">
+        <h1>WORDLE</h1>
+      </div>
+      <div class="desc">
+        <a class="tutorial" href="#popup1">How to Play?</a>
+      </div>
+    </div>
+    <!-- Tutorial pop up -->
+    <div class="overlay" id="popup1">
+      <div class="popup">
+        <h2>How to Play Wordle 🤔</h2>
+        <a href="#" class="close">&times;</a>
+        <div class="content">
+          <div class="maincontent">
+            Guess the word in six tries. <br />
+            Each guess must be a valid 5-letter word. <br />
+            Hit the enter button to submit! <br />
+            After each guess the color change to show how close your guess is to
+            the target. <br /><br />
+            <span class="correct">Green</span> = The letter is in the correct
+            spot! <br />
+            <span class="wrong-location">Yellow</span> = The letter is in the
+            wrong spot! <br />
+            <span class="wrong">Black</span> = The letter is not in the word!
+            <br />
+          </div>
+          <div class="videohelp">
+            <a
+              href="https://www.youtube.com/shorts/jj5b4V6d6UU"
+              target="_blank"
+            >
+              <p>Here is a quick video of how to beat Wordle! 📽️ <br /></p>
+              <iframe
+                src="https://www.youtube.com/embed/z0FSsnG1WjU"
+                frameborder="0"
+              ></iframe>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Play Again -->
+    <button type="submit" onclick="refreshPage()" class="restart">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M13.5 2c-5.621 0-10.211 4.443-10.475 10h-3.025l5 6.625 5-6.625h-2.975c.257-3.351 3.06-6 6.475-6 3.584 0 6.5 2.916 6.5 6.5s-2.916 6.5-6.5 6.5c-1.863 0-3.542-.793-4.728-2.053l-2.427 3.216c1.877 1.754 4.389 2.837 7.155 2.837 5.79 0 10.5-4.71 10.5-10.5s-4.71-10.5-10.5-10.5z"
+        />
+      </svg>
+    </button>
+    <!-- Guessing Grid -->
+    <div class="alert-container" data-alert-container></div>
+    <div data-guess-grid class="guess-grid">
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+    </div>
+    <!-- Keyboard -->
+    <div data-keyboard class="keyboard">
+      <button class="key" data-key="Q">Q</button>
+      <button class="key" data-key="W">W</button>
+      <button class="key" data-key="E">E</button>
+      <button class="key" data-key="R">R</button>
+      <button class="key" data-key="T">T</button>
+      <button class="key" data-key="Y">Y</button>
+      <button class="key" data-key="U">U</button>
+      <button class="key" data-key="I">I</button>
+      <button class="key" data-key="O">O</button>
+      <button class="key" data-key="P">P</button>
+      <div class="space"></div>
+      <button class="key" data-key="A">A</button>
+      <button class="key" data-key="S">S</button>
+      <button class="key" data-key="D">D</button>
+      <button class="key" data-key="F">F</button>
+      <button class="key" data-key="G">G</button>
+      <button class="key" data-key="H">H</button>
+      <button class="key" data-key="J">J</button>
+      <button class="key" data-key="K">K</button>
+      <button class="key" data-key="L">L</button>
+      <div class="space"></div>
+      <button data-enter class="key large">ENTER</button>
+      <button class="key" data-key="Z">Z</button>
+      <button class="key" data-key="X">X</button>
+      <button class="key" data-key="C">C</button>
+      <button class="key" data-key="V">V</button>
+      <button class="key" data-key="B">B</button>
+      <button class="key" data-key="N">N</button>
+      <button class="key" data-key="M">M</button>
+      <button data-delete class="key large">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+        >
+          <path
+            fill="var(--color-tone-1)"
+            d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H7.07L2.4 12l4.66-7H22v14zm-11.59-2L14 13.41 17.59 17 19 15.59 15.41 12 19 8.41 17.59 7 14 10.59 10.41 7 9 8.41 12.59 12 9 15.59z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
