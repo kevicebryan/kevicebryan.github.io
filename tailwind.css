@@ -1,93 +1,106 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700&display=swap");
 
-html, body{
+html,
+body {
   scroll-behavior: smooth;
 }
 
-.go-down{
+table {
+  border-collapse: separate;
+  border-radius: 1em;
+  overflow: hidden;
+  border: 2px solid white;
+  border-spacing: 0;
+}
+
+tr,
+td,
+th {
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.go-down {
   animation: transitionIn 0.4s;
 }
 
-.go-down-slow{
+.go-down-slow {
   animation: transitionInBigger 0.8s;
 }
 
-.go-left{
+.go-left {
   animation: transitionLeft 1s;
-  transition: ease-in-out 1.0s;
+  transition: ease-in-out 1s;
 }
 
-.go-left-mobile{
+.go-left-mobile {
   animation: transitionLeft 0.3s;
-  transition: ease-in-out 1.0s;
+  transition: ease-in-out 1s;
 }
 
-.go-right{
+.go-right {
   animation: transitionRight 0.4s;
 }
 
-
-
 @keyframes transitionIn {
-  from{
+  from {
     opacity: 0;
     transform: translateY(-10px);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-@keyframes transitionInBigger{
-  from{
+@keyframes transitionInBigger {
+  from {
     opacity: 0;
     transform: translateY(-50px);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
 @keyframes transitionLeft {
-  from{
+  from {
     opacity: 0;
     transform: translateX(100px);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateX(0);
   }
 }
 
 @keyframes transitionRight {
-  from{
+  from {
     opacity: 0;
     transform: translateX(-24px);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateX(0);
   }
 }
 
-.left-50{
+.left-50 {
   left: 50%;
 }
 
-.curve-edge{
+.curve-edge {
   border-radius: 16px;
 }
 
-.right-50{
-  right:50%;
+.right-50 {
+  right: 50%;
 }
 
-.top-50{
+.top-50 {
   top: 50%;
 }
 
@@ -109,7 +122,7 @@ html, body{
 }
 
 [id] {
-scroll-margin-top: 100px;
+  scroll-margin-top: 100px;
 }
 
 .left-percentage {
